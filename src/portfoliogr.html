@@ -4,26 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portifolio</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
+    <header id="header">
+      <nav class="grid-container">
         <div id="mylogo">
-          <img src="logo/mylogo.png" alt="" width="50" height="30" />
+          <img src="Images\logo\mylogo.png" alt="" width="50" height="30" />
         </div>
         <div class="navl">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Achievement</a></li>
-            <li><a href="#">Hobbies</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Achievements">Achievement</a></li>
+            <li><a href="#Hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
     </header>
-    <section class="Home">
-      <div>
+    <section class="Home" id="Home">
+      <div class="container">
         <div class="intr">
           <h5>Hi I am <span>Meti Lamessa</span></h5>
           <p>
@@ -33,7 +34,7 @@
             me better.
           </p>
         </div>
-        <div>
+        <div class="himage">
           <img
             src="Images/photo_2023-01-23_09-26-29.jpg"
             alt=""
@@ -43,17 +44,12 @@
         </div>
       </div>
     </section>
-    <section class="About">
-      <div>
-        <div>
-          <img
-            src="Images/photo_2022-11-06_14-33-04.jpg"
-            alt=""
-            width="100"
-            height="120"
-          />
+    <section class="About" id="About">
+      <div class="Acontainer">
+        <div class="circle-image">
+          <img src="Images/photo_2022-11-06_14-33-04.jpg" alt="" />
         </div>
-        <div>
+        <div class="Aparagraph">
           <h2>About Me</h2>
           <p>
             My name is Meti Lamessa, and I am an ambitious young woman from
@@ -71,40 +67,43 @@
         </div>
       </div>
     </section>
-    <section class="Achievements">
-      <div>
-        <div><h3>My Achievements</h3></div>
-        <div>
-          <img src="Images/cscpt.PNG" alt="" width="150" height="180" />
-          <p>
-            This is my certificate for <strong>completing</strong> the Cisco
-            Networking Academy® Introduction to Packet Tracer course.
-          </p>
-        </div>
-        <div>
-          <img src="Images/cscfn.PNG" alt="" width="150" height="180" />
-          <p>
-            This is my certificate for <strong>completing</strong> Networking
-            Essentials course.
-          </p>
-        </div>
-        <div>
-          <img
-            src="Images/photo_2022-03-20_18-23-03.jpg"
-            alt=""
-            width="150"
-            height="180"
-          />
-          <p>
-            This in is my certificate for <strong>volunteering</strong> by
-            teaching high school students.
-          </p>
+    <section class="Achievements" id="Achievements">
+      <div class="Ac-container">
+        <div class="topic"><h3>My Achievements</h3></div>
+        <div class="docs">
+          <div>
+            <img src="Images/cscpt.PNG" alt="" />
+            <p>
+              This is my certificate for <strong>completing</strong> the Cisco
+              Networking Academy® Introduction to Packet Tracer course.
+            </p>
+          </div>
+          <div>
+            <img src="Images/cscfn.PNG" alt="" />
+            <p>
+              This is my certificate for <strong>completing</strong> Networking
+              Essentials course.
+            </p>
+          </div>
+          <div>
+            <img
+              src="Images/photo_2022-03-20_18-23-03.jpg"
+              alt=""
+              width="150"
+              height="180"
+            />
+            <p>
+              This in is my certificate for <strong>volunteering</strong> by
+              teaching high school students.
+            </p>
+          </div>
         </div>
       </div>
     </section>
-    <section class="Hobbies">
-      <div>
-        <div>
+    <section class="Hobbies" id="Hobbies">
+      <div><h3>My Hobbies</h3></div>
+      <div class="det">
+        <div class="fh">
           <div>
             <p>
               Most of the time, I find great joy in immersing myself in books
@@ -136,8 +135,8 @@
             </table>
           </div>
         </div>
-        <div>
-          <h3>Here is my favorite movie and my favorite book</h3>
+        <div class="sh">
+          <h4>Here is my favorite movie and my favorite book</h4>
           <div>
             <iframe
               width="250"
@@ -149,54 +148,57 @@
             ></iframe>
           </div>
           <div>
-            <img src="Images/tpdl.PNG" alt="" width="250" height="230" />
+            <img src="Images/tpdl.PNG" alt="" width="" height="230" />
           </div>
         </div>
       </div>
     </section>
     <footer>
-      <section class="contact">
-        <div>
+      <section class="contact" id="contact">
+        <div class="contact-grid">
           <div class="cto">
             <h3>Contact</h3>
-            <ul>
+            <ul id="list">
               <li><a href="#">metalamessa02@gmail.com</a></li>
+
               <li>Tel: +251906125228</li>
+
               <li>instagram(meta_hawa)</li>
             </ul>
           </div>
-        </div>
-        <div class="p2">
-          <form>
-            <p>
-              <label for="name">Name:</label>
-              <input
-                type="text"
-                id="name"
-                name="fname"
-                placeholder="Your name..."
-                class="input"
-              />
-            </p>
-            <br />
-            <p>
-              <label for="email">email:</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your email..."
-                class="input"
-              />
-            </p>
-            <br />
-            <p>
-              <label>comment:</label><br />
-              <textarea class="area" placeholder="your comment"></textarea
-              ><br />
-              <input type="submit" value="submit" class="submit" />
-            </p>
-          </form>
+
+          <div class="p2">
+            <form>
+              <p>
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="fname"
+                  placeholder="Your name..."
+                  class="input"
+                />
+              </p>
+              <br />
+              <p>
+                <label for="email">email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your email..."
+                  class="input"
+                />
+              </p>
+              <br />
+              <p>
+                <label>comment:</label><br />
+                <textarea class="area" placeholder="your comment"></textarea
+                ><br />
+                <input type="submit" value="submit" class="submit" />
+              </p>
+            </form>
+          </div>
         </div>
       </section>
     </footer>
